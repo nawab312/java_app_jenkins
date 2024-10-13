@@ -4,7 +4,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 #Copy the Spring Boot Application JAR file to Container
-COPY target/myapp.jar /app/myapp.jar
+COPY target/myapp*.jar /app/myapp.jar
 
 #Expose the port on which app will run
 EXPOSE 8083
